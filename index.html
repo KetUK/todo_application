@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link href="styles.css" rel="stylesheet" />
+
+    <title>TODO APP</title>
+  </head>
+  <body>
+    <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+      <h1 class="header-style">TODO App</h1>
+    </header>
+    <div class="container-fluid">
+      <main>
+        <br />
+        <!-- ToDo Input -->
+
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Add Item to List"
+            aria-label="Add Item to List"
+            aria-describedby="button-addon2"
+          />
+
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+              Add
+            </button>
+          </div>
+        </div>
+
+        <!-- Show ToDo List -->
+        <div class="alert alert-warning" role="alert">
+          There are <span class="badge badge-warning">4</span> Items in the List
+        </div>
+
+        <ul class="list-group list-pointer">
+          <li
+            class="list-group-item d-flex justify-content-between align-items-center list-pointer"
+          >
+            <p>Study Javascript</p>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Complete</button>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <p class="todo-complete">Grocery Shopping</p>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+            </span>
+          </li>
+
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <p>Cooking</p>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Complete</button>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+            </span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <p class="todo-complete">Go to Tech Returners Class</p>
+            <span>
+              <button type="button" class="btn btn-primary btn-sm">Delete</button>
+            </span>
+          </li>
+        </ul>
+        <br />
+
+        <!-- Filter ToDo List -->
+        <div class="btn-group button-list-center" role="group" aria-label="ToList Actions">
+          <button type="button" class="btn btn-warning active">Show All</button>
+          <button type="button" class="btn btn-success">Completed</button>
+          <button type="button" class="btn btn-danger">Incomplete</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
